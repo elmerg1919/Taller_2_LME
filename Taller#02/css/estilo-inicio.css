@@ -81,3 +81,38 @@ footer p{
 
 }
 
+* {
+list-style:none;
+margin:0;
+padding:0;
+}
+ 
+.nav > li {
+float:left;
+}
+ 
+.nav li a {
+color:#FFF;
+display:block;
+padding:10px 12px;
+}
+
+
+.nav li ul {
+display:none;
+position:absolute;
+min-width:140px;
+}
+
+.nav li:hover > ul {
+display:block;
+}
+
+.nav li ul li {
+position:relative;
+}
+ 
+.nav li ul li ul {
+right:-140px;
+top:0;
+}
