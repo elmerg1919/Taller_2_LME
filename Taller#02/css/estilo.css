@@ -123,12 +123,21 @@ border-collapse: collapse;
 }
 
 
-section.content-video {
+.content-video {
     text-align: center;
-    padding: 2em 0;
+
 }
+
 
 #videos_t{
     text-align: center;
+}
+
+.content {
+    margin-top: 50px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background: #eaecee;
 }
 
