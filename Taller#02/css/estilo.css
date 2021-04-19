@@ -84,43 +84,24 @@ text-align: center;
 
 
 
-#Paises{
+#Carteleras{
     margin: 25px auto;
     border-style: solid;
     border-collapse: collapse;
 }
 
-#Paises td, th{
+#Carteleras td, th{
     border-style: solid;
     border-width: 1px;
     padding: 10px;
 }
 
-#Paises th{
+#Carteleras th{
     border-style: none;
     background-color:rgba(13,71,161 ,1);
     color:white;
 }
 
-
-#paises{
-margin: 25PX auto;
-border-style: solid;
-border-collapse: collapse;
-}
-
-#paises td,th{
-    border-style: solid;
-    border-width: 1px;
-    padding: 10px;
-
-}
-
-#paises th{
-    border-style: none;
-    background-color: rgba(13,71,161 ,1); 
-    color: white;
-}
 
 
 .content-video {
@@ -128,16 +109,11 @@ border-collapse: collapse;
 
 }
 
-
+video{
+    width:62%; 
+    height:33.33%;
+}
 #videos_t{
     text-align: center;
-}
-
-.content {
-    margin-top: 50px;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    background: #eaecee;
 }
 
