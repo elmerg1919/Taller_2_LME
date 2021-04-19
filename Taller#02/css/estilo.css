@@ -85,7 +85,7 @@ text-align: center;
 
 
 #Carteleras{
-    margin: 25px auto;
+    margin: 4% auto;
     border-style: solid;
     border-collapse: collapse;
 }
@@ -93,7 +93,8 @@ text-align: center;
 #Carteleras td, th{
     border-style: solid;
     border-width: 1px;
-    padding: 10px;
+    padding-top: 6%;
+    padding-right: 3%;
 }
 
 #Carteleras th{
