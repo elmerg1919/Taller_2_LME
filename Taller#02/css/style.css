@@ -1,49 +1,302 @@
-*{
-  margin: 0;
-  padding: 0;
-}
+@import url(http://fonts.googleapis.com/css?family=Muli);
 
 body{
-  font-family: Arial;
+    font-family: 'Muli', sans-serif;
+    background: rgba(236, 240, 241 );   
+}
+h1{
+    text-align: center;
 }
 
-/*Estilos Generales*/
-nav ul{
-  list-style-type: none;
-}
-nav li{
-  line-height: 2.5em;
-
-}
-nav a{
-  color: #ddd;
-  display: block;
-  padding: 0 2.5em;
-  text-decoration: none;
+.text_center{
+text-align: center;    
 }
 
-nav a:hover{
-  background-color: rgba(0,0,0,0.5);
-}
-
-/*Primer nivel*/
-nav>ul{
-  background-color: #333;
+.carousel-inner img{
   width: 100%;
-  overflow: hidden;
+    height: 385px;
+}
+#centro{
+   display: block;
+    margin: auto;
+    height: 360px;
+    width: 360px;
+    padding-bottom: 25px; 
+}
+.jumbotron{
+  background-color: rgb(147, 228, 234 );
+}
+
+/* ESTILO PARA FOOTER  */
+.footer{
+    background-color:rgb(36, 25, 116);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
-nav>ul>li{
-  float: left;
+footer p{
+    text-align: center;
+    color: white;
+    padding: 25px;
+    font-size: 15px;
 }
-nav>ul>li>ul{
+.footer img{
+    width: 65px;
+    padding: 10px;
+}
+
+
+
+p{
+  text-align: center;
+}
+.titulo{
+  color: black;
+}
+
+.lead{
+  color: black;
+}
+/*RESPONSIVE CINE.HTML*/
+@media screen and (max-width: 480px){
+  /*Estilos para moviles*/
+  .carousel-inner img{
+  width: 80%;
+    height: 150px;
+  }
+  #centro{
+   display: block;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    padding-bottom: 25px; 
+}
+footer p{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+}
+
+/*Estilo para la pagina promociones.html*/
+.containe{
+  margin: auto;
+  background-color: white;
+  width: 70%;
+  padding: 30px;
+  position:static;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 300px;
+  padding-left: 10%;
   position: absolute;
-  display: none;
-}
-nav>ul>li:hover ul{
-  display: block;
+  top: 20px;
 }
 
-nav>ul>li>ul>li{
-  background-color: #222;
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+
+.menu{
+  text-align: center;
+  margin: 20px;
+  padding-top: 10px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 100%;
+font-family: 'Dancing Script', cursive;
+ 
+}
+
+.header{
+  background: #5D6D7E;
+  margin-top: 5px; 
+}
+header h1{
+color:white;
+text-align: center;
+font-size: 2em;
+text-transform: uppercase;
+
+}
+
+@media screen and (max-width: 480px){
+  /*Estilos para moviles*/
+.containe{
+  margin: auto;
+  background-color: white;
+  width: 100%;
+ 
+}
+
+ul.slider{
+  position: relative;
+  width: 100px;
+  height: 100px;
+
+}
+ul.slider li img{
+  width: 300%;  
+  height: 160%;
+  margin-left: -25px;
+
+
+  }
+}
+
+@media screen and (max-width: 480px){
+  .menu{
+  text-align: center;
+  margin: 20px;
+   margin-top: 80px;
+}
+#cartas{
+  width:100%;
+  height: 2300px;
+  max-height: 1200px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background: #AEB6BF;
+  margin-bottom: 25px;
+
+}
+  
+}
+@media screen and (max-width: 480px){
+  /*Para Moviles div ="Row"*/
+  #cartas .card{
+  width: 100%;
+  height: 70%;
+  border-radius: 8px;
+  box-shadow: 0 2px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  top: -235%;
+  }
+#cartas .card:hover{
+  transform:  translateY(-15px);
+  box-shadow: 0 10px 8px rgba(46, 204, 113);
+
+}
+}
+
+
+
+/*Estilos para Carta*/
+  .row{
+  width: 210%;
+  max-width: 1200px;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background: #AEB6BF ;
+  margin-bottom: 25px;
+
+}
+
+.row .card{
+  width: 21%;
+  height: 70%;
+  border-radius: 8px;
+  box-shadow: 0 2px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+
+}
+
+.row .card:hover{
+  transform:  translateY(-15px);
+  box-shadow: 0 10px 8px rgba(46, 204, 113);
+
+}
+
+.row .card img{
+  width: 200px;
+  height: 100px;
+ margin-left: 25px;
+
+}
+
+.row .card h4{
+  font-weight: 600;
+}
+
+.row .card p{
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.row .card a{
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+
+}
+
+.contenido-cartas{
+  color: black;
+  font-size: 12px;
+
 }
