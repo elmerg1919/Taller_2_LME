@@ -118,3 +118,14 @@ video{
     text-align: center;
 }
 
+.header{
+  background: #5D6D7E;
+  margin-top: 5px; 
+}
+header h1{
+color:white;
+text-align: center;
+font-size: 2em;
+text-transform: uppercase;
+
+}
